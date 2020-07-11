@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node -r dotenv/config --experimental-modules app.js",
+    "dev": "node -r dotenv/config --experimental-modules app.js",
+    "start": "node --experimental-modules app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
