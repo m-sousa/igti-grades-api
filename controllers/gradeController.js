@@ -39,8 +39,8 @@ const findAll = async (req, res) => {
 };
 
 const findOne = async (req, res) => {
-  logger.info(`GET /grade - ${id}`);
   const id = req.params.id;
+  logger.info(`GET /grade - ${id}`);
 
   try {
     const data = await Grade.findById({ _id: id });
